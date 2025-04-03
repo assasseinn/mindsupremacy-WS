@@ -1,0 +1,103 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 97.3%;
+    --foreground: 222.2 47.4% 11.2%;
+    
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+    
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 47.4% 11.2%;
+    
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 47.4% 11.2%;
+    
+    --primary: 222.2 47.4% 28.2%;
+    --primary-foreground: 210 40% 98%;
+    
+    --secondary: 43 77% 54%;
+    --secondary-foreground: 210 40% 98%;
+    
+    --accent: 346 100% 23%;
+    --accent-foreground: 0 0% 98%;
+    
+    --destructive: 0 100% 50%;
+    --destructive-foreground: 210 40% 98%;
+    
+    --ring: 215 20.2% 65.1%;
+    
+    --radius: 0.5rem;
+    
+    --chart-1: 222.2 47.4% 28.2%;
+    --chart-2: 43 77% 54%;
+    --chart-3: 346 100% 23%;
+    --chart-4: 143 64% 34%;
+    --chart-5: 0 0% 25%;
+    
+    --sidebar-background: 0 0% 100%;
+    --sidebar-foreground: 240 10% 3.9%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 240 5.9% 90%;
+    --sidebar-ring: 240 5% 64.9%;
+  }
+  
+  * {
+    @apply border-border;
+  }
+  
+  body {
+    @apply antialiased bg-background text-foreground;
+    font-family: 'Inter', sans-serif;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+    @apply font-bold;
+  }
+  
+  .sacred-bg {
+    background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%239C92AC' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  }
+
+  .principle-card {
+    @apply transition-all duration-300;
+  }
+  
+  .principle-card:hover {
+    @apply transform -translate-y-1 shadow-lg;
+  }
+  
+  .glow-button {
+    animation: glow 2s infinite alternate;
+  }
+  
+  @keyframes glow {
+    0% {
+      box-shadow: 0 0 5px rgba(212, 175, 55, 0.5);
+    }
+    100% {
+      box-shadow: 0 0 20px rgba(212, 175, 55, 0.8);
+    }
+  }
+  
+  .hero-pattern {
+    background-image: linear-gradient(to bottom, rgba(26, 38, 66, 0.95), rgba(26, 38, 66, 0.8)), url("https://images.unsplash.com/photo-1519681393784-d120267933ba?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80");
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .testimonial-quote {
+    font-family: 'Playfair Display', serif;
+    @apply italic;
+  }
+}
