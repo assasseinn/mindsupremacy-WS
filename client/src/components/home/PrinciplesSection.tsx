@@ -33,10 +33,10 @@ const PrinciplesSection = () => {
         
         <div className="text-center">
           <Link href="/principles">
-            <a className="inline-flex items-center text-[#700027] hover:text-[#700027]/80 font-semibold transition-colors">
+            <div className="inline-flex items-center text-[#700027] hover:text-[#700027]/80 font-semibold transition-colors">
               Discover All 7 Principles
               <ArrowRight className="h-5 w-5 ml-1" />
-            </a>
+            </div>
           </Link>
         </div>
       </div>

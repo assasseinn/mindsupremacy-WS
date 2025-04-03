@@ -5,7 +5,7 @@ import { queryClient } from "./lib/queryClient";
 import Header from "./components/layout/Header";
 import Footer from "./components/layout/Footer";
 import Home from "./pages/Home";
-import Principles from "./pages/Principles";
+import Course from "./pages/Course";
 import Payment from "./pages/Payment";
 import Legal from "./pages/Legal";
 import NotFound from "@/pages/not-found";
@@ -17,7 +17,7 @@ function Router() {
       <main className="flex-grow">
         <Switch>
           <Route path="/" component={Home} />
-          <Route path="/principles" component={Principles} />
+          <Route path="/course" component={Course} />
           <Route path="/payment" component={Payment} />
           <Route path="/legal/:type" component={Legal} />
           <Route component={NotFound} />
