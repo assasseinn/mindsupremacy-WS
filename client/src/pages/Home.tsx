@@ -1,5 +1,4 @@
 import HeroSection from "@/components/home/HeroSection";
-import PrinciplesSection from "@/components/home/PrinciplesSection";
 import TestimonialsSection from "@/components/home/TestimonialsSection";
 import ProgramValueSection from "@/components/home/ProgramValueSection";
 import FAQSection from "@/components/home/FAQSection";
@@ -25,7 +24,6 @@ const Home = () => {
       
       <div className="pt-16">
         <HeroSection />
-        <PrinciplesSection />
         <TestimonialsSection />
         <ProgramValueSection />
         <FAQSection />

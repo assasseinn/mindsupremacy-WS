@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { Link } from 'wouter';
 import { ChevronLeft } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import AudioPlayer from '../../components/course/AudioPlayer';
+import AudioPlayer from '@/components/course/AudioPlayer';
 import CourseProgress from '@/components/course/CourseProgress';
 import ChapterList from '@/components/course/ChapterList';
 
