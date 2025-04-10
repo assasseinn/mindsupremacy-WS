@@ -14,10 +14,8 @@ const FinalCTA = () => {
         </p>
         
         <div className="relative mb-8">
-          <Link href="/payment">
-            <a className="glow-button inline-block bg-[#d4af37] hover:bg-yellow-500 text-[#1a2642] text-xl font-montserrat font-bold py-4 px-8 rounded-lg transition-colors">
-              Secure Your Copy Now
-            </a>
+          <Link href="/payment" className="glow-button inline-block bg-[#d4af37] hover:bg-yellow-500 text-[#1a2642] text-xl font-montserrat font-bold py-4 px-8 rounded-lg transition-colors">
+            Secure Your Copy Now
           </Link>
         </div>
         
